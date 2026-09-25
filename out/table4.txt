@@ -1,0 +1,30 @@
+Tabla 4. Los efectos de la caida del precio del capital TIC
+Replicacion de Eden & Gaggl (2018), RED 29, 15-43.
+Contrafactual: precio del TIC constante en su nivel de 1950.
+
+A. Producto y consumo
+                   log y   contraf      dif       log c   contraf      dif
+EE inicial         10.20     10.20     0.00        9.78      9.78     0.00
+EE final           10.34     10.19     0.15        9.87      9.77     0.10
+100 x cambio       13.80     -1.47    15.27        8.58     -0.97     9.55
+
+B. Capital TIC y no TIC
+                 log TIC   contraf      dif    log NTIC   contraf      dif
+EE inicial          7.45      7.45     0.00       11.45     11.45     0.00
+EE final           10.22      6.85     3.37       11.59     11.44     0.15
+100 x cambio      277.28    -59.30   336.58       13.80     -1.47    15.27
+
+C. Participacion del trabajo (%)
+                  agreg  contraf     dif    rutina  contraf     dif    no rut  contraf     dif
+EE inicial        63.15    63.15    0.00     35.60    35.60    0.00     27.55    27.55    0.00
+EE final          59.70    63.51   -3.81     19.96    37.92  -17.96     39.74    25.59   14.14
+cambio            -3.45     0.37   -3.81    -15.64     2.32  -17.96     12.19    -1.95   14.14
+
+D. Participacion del capital TIC (%)
+                    TIC  contraf     dif
+EE inicial         1.80     1.80    0.00
+EE final           5.25     1.44    3.81
+cambio             3.45    -0.37    3.81
+
+Participacion del capital no TIC: 35.05% en todo momento (igual a alpha).
+Residuo maximo del solver de estado estacionario: 2.92e-12

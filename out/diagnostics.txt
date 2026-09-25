@@ -1,0 +1,28 @@
+Validacion de la solucion numerica
+==================================
+
+Series exogenas del capital TIC: aproximacion
+PTF calibrada: A = 718.6424
+
+1. Residuos maximos
+   estado estacionario inicial      4.441e-16
+   estado estacionario final base   1.110e-16
+   estado estacionario contraf.     2.915e-12
+   transicion base                  3.078e-13 (5 iteraciones)
+   transicion precio fijo           1.588e-14 (4 iteraciones)
+   transicion precio y depr. fijos  2.065e-14 (0 iteraciones)
+
+2. Contrafactual sin variacion exogena: desvio maximo del capital
+   respecto al estado estacionario inicial: 1.746e-10
+   (debe ser del orden de la tolerancia; confirma que el solver de
+    transicion reproduce el estado estacionario cuando nada cambia)
+
+3. Participaciones de ingreso: desvio maximo de la suma respecto a 1
+   4.441e-16
+
+4. Convergencia al estado estacionario final (ultimo periodo simulado)
+   log kn: transicion 11.589118, estado estacionario 11.589119, dif -1.03e-06
+   log kc: transicion 10.218180, estado estacionario 10.218181, dif -1.09e-06
+
+5. Resultado de bienestar
+   lambda en 1980: 4.7473% (paper: aproximadamente 4%)
