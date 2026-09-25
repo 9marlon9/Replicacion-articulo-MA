@@ -26,21 +26,44 @@ Ninguna celda de la Tabla 4 se aparta del original en más de 0,03 puntos
 porcentuales. Las diferencias son atribuibles al redondeo de los parámetros
 publicados.
 
-## Ejecución
+## Cómo reproducir
 
-Requiere Matlab o GNU Octave. No usa ninguna toolbox ni paquete externo: el
-Newton denso, el Newton de banda y la bisección están implementados en `src/`.
+**1. Descargar el repositorio.**
 
-Desde la raíz del repositorio:
+```
+git clone https://github.com/9marlon9/Replicacion-articulo-MA.git
+```
+
+O con el botón **Code → Download ZIP** y descomprimir. No hay nada más que
+instalar ni datos que conseguir aparte.
+
+**2. Abrir Matlab u Octave** y situarse en la **raíz** de la carpeta, no en
+`src/`: `run_all` agrega esa subcarpeta a la ruta de forma relativa.
+
+**3. Ejecutar.**
 
 ```matlab
 run_all
 ```
 
-Unos 15 segundos. Escribe todo en `out/`.
+Unos 15 segundos. Sobrescribe `out/` con los resultados de esa corrida.
 
-Verificado en **GNU Octave 8.4.0** (Linux) y ejecutado en **Matlab R2026a**
-(macOS). Los resultados de `out/` en este repositorio provienen de Octave 8.4.0.
+**4. Verificar.** Las salidas originales vienen versionadas en el repositorio,
+no ignoradas, así que la comprobación es un diff:
+
+```
+git diff --stat out/
+```
+
+`out/table4.csv` y `out/welfare.csv` deben coincidir en todas las cifras
+reportadas. Diferencias en los últimos dígitos de los residuos de
+`out/diagnostics.txt` son normales entre motores distintos, y los `.png`
+difieren byte a byte aunque las curvas sean idénticas.
+
+No requiere ninguna toolbox: el Newton denso, el Newton de banda y la bisección
+están implementados en `src/`. Verificado en **GNU Octave 8.4.0** (Linux) y
+ejecutado en **Matlab R2026a** (macOS); los resultados versionados en `out/`
+provienen de Octave 8.4.0.
 
 ## Estructura
 
