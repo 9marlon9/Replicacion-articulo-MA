@@ -21,7 +21,9 @@ function make_figures(tr_base, tr_cfp, tr_cfpd, t0_years, lam, cons_gain, p, iT)
     yr = (p.year0:p.year1)';
     r  = 1:iT;
 
-    figure('position', [0 0 1100 780]);
+    f = figure('position', [0 0 980 700]);
+    set(f, 'defaultaxesfontsize', 13, 'defaulttextfontsize', 13, ...
+           'defaultaxeslinewidth', 1.0);
 
     subplot(3,2,1)
     plot(yr, log(tr_base.a.y(r)), '-', 'linewidth', 2); hold on
@@ -62,10 +64,11 @@ function make_figures(tr_base, tr_cfp, tr_cfpd, t0_years, lam, cons_gain, p, iT)
     plot(yr, log(tr_cfpd.a.c(r)), ':', 'linewidth', 1.5);
     title('F. Consumo (log)'); xlim([p.year0 p.year1]); grid on
 
-    print(fullfile('out','fig7.png'), '-dpng', '-r140');
+    print(fullfile('out','fig7.png'), '-dpng', '-r170');
     close
 
-    figure('position', [0 0 1000 380]);
+    f = figure('position', [0 0 900 360]);
+    set(f, 'defaultaxesfontsize', 13, 'defaulttextfontsize', 13);
     subplot(1,2,1)
     plot(t0_years, 100*lam, '-', 'linewidth', 2); grid on
     xlabel('ano de evaluacion t_0'); title('A. lambda: ganancia equivalente (%)');
@@ -74,6 +77,6 @@ function make_figures(tr_base, tr_cfp, tr_cfpd, t0_years, lam, cons_gain, p, iT)
     plot(yr, cons_gain, '-', 'linewidth', 2); grid on
     xlabel('ano'); title('B. 100 x (c_t/c_{1950} - 1)');
     xlim([p.year0 p.year1]);
-    print(fullfile('out','fig8.png'), '-dpng', '-r140');
+    print(fullfile('out','fig8.png'), '-dpng', '-r170');
     close
 end
