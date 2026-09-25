@@ -28,6 +28,11 @@ publicados.
 
 ## Cómo reproducir
 
+Sin instalar nada: **[abrir en MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=9marlon9/Replicacion-articulo-MA&file=run_all.m)**,
+que carga el repositorio listo para correr. Requiere una cuenta de MathWorks.
+
+En tu máquina, en cambio:
+
 **1. Descargar el repositorio.**
 
 ```
