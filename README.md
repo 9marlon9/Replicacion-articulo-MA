@@ -63,7 +63,6 @@ src/write_diagnostics.m    pruebas de validación
 src/ict_series.m           series exógenas del capital TIC
 data/                      series del BEA; ver data/README.md
 out/                       resultados congelados, para comparar
-doc/                       documento de la replicación, en LaTeX y PDF
 ```
 
 ## Método

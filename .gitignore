@@ -2,11 +2,3 @@
 octave-workspace
 *.asv
 *.m~
-
-*.aux
-*.fdb_latexmk
-*.fls
-*.synctex.gz
-*.toc
-doc/*.log
-doc/*.out
